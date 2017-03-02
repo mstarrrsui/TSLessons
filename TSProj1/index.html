@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <title>Document</title>
+    <script src="https://unpkg.com/systemjs@0.20.9/dist/system.js"></script>
+</head>
+<body>
+    <script>
+
+        System.config({
+            packages:{
+                "dist": {
+                    "defaultExtension":"js",
+                    "main": "main"
+                }
+            }
+        })
+
+        System.import("dist");
+
+    </script>
+</body>
+</html>
