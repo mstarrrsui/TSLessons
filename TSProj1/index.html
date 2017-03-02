@@ -13,11 +13,18 @@
     <script>
 
         System.config({
+            paths: {
+                // paths serve as alias
+                'npm:': 'node_modules/'
+            },
             packages:{
                 "dist": {
                     "defaultExtension":"js",
                     "main": "main"
                 }
+            },
+            map: {
+                "lodash": "https://unpkg.com/lodash@4.17.4/lodash.js"
             }
         })
 

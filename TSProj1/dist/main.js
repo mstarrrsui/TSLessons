@@ -1,4 +1,5 @@
 "use strict";
+var _ = require('lodash');
 var App = (function () {
     function App() {
         this.name = "Mike";
@@ -10,4 +11,4 @@ var App = (function () {
     };
     return App;
 }());
-new App();
+console.log((_.isArray(new App().getUsers())));
