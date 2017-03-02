@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
+        "rootDir": "./src",
         "module": "commonjs",
         "target": "es5",
         "noImplicitAny": false,
         "sourceMap": false,
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "noEmitOnError": true
     },
-    "files": [
-      "src/main.ts"
+    "exclude": [
+        "node_modules"
     ]
 }

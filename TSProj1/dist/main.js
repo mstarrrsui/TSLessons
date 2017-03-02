@@ -1,8 +1,13 @@
 "use strict";
-require("./two");
-var Person = (function () {
-    function Person() {
+var App = (function () {
+    function App() {
         this.name = "Mike";
+        this.title = "Eggheads";
+        console.log("I'm working!!");
     }
-    return Person;
+    App.prototype.getUsers = function () {
+        return [{ name: "John" }];
+    };
+    return App;
 }());
+new App();
