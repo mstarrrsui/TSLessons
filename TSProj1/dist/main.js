@@ -1,5 +1,8 @@
 "use strict";
 var _ = require('lodash');
+require('rxjs/add/observable/timer');
+require('rxjs/add/observable/interval');
+//Observable.interval(1000).subscribe( x=> console.log(x))
 var App = (function () {
     function App() {
         this.name = "Mike";
