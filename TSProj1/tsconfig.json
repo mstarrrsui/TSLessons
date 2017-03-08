@@ -6,7 +6,9 @@
         "noImplicitAny": false,
         "sourceMap": false,
         "outDir": "./dist",
-        "noEmitOnError": true
+        "noEmitOnError": false,
+        "experimentalDecorators": true,
+        "skipLibCheck": true
     },
     "exclude": [
         "node_modules"

@@ -3,6 +3,6 @@ export interface Person {
 }
 
 export interface SocialNetwork {
-    title:String;
-    getUsers():Person[];
+    title: String;
+    getUsers(): Array<Person>;
 }
